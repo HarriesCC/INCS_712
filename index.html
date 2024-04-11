@@ -7,9 +7,33 @@
     <title>DOCX to PDF in Node.js & Express</title>
 </head>
 <body>
-    <form action="/docxtopdf" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" required id="">
-        <input type="submit" value="Download PDF File">
-    </form>
+    <div class="container">
+        <div>
+            <h1>INCS 712 PDF Convertor</h1>
+        </div>
+        <br/>
+        <div>
+            <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required id="">
+                <input type="submit" value="Download PDF File">
+            </form>
+        </div>
+        <div>
+            <h3>Instructions:</h3>
+            <p>1. Select a DOCX file to convert to PDF</p>
+            <p>2. Click on the "Download PDF File" button</p>
+            <p>3. The converted PDF file will be downloaded automatically</p>
+        </div>
+        <div>
+            <b>Note: This site is for testing purposes only. Do not upload sensitive information.</b>
+        </div>
+    </div>
 </body>
+<style>
+    .container {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
 </html>
